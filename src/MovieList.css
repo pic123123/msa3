@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.movie-list {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.movie-item {
+  min-width: 200px; /* 적절한 너비 설정 */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px; /* 원하는 최대 너비 설정 */
+  margin: auto; /* 중앙 정렬 */
+  padding: 0px 16px; /* 좌우 패딩 설정 */
+}
