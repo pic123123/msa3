@@ -17,7 +17,11 @@
     "start:dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docker:build": "docker build --no-cache --network host -t msa3:1 .",
+    "docker:tag": "docker tag msa3:1 755131291979.dkr.ecr.ap-northeast-2.amazonaws.com/msa3:1",
+    "docker:login": "aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 755131291979.dkr.ecr.ap-northeast-2.amazonaws.com",
+    "docker:push": "docker push 755131291979.dkr.ecr.ap-northeast-2.amazonaws.com/msa3:1"
   },
   "eslintConfig": {
     "extends": [
